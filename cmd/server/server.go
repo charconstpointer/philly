@@ -7,7 +7,7 @@ import (
 func main() {
 	r := gin.Default()
 	r.GET("/", handleRoot())
-	r.Run(":5010")
+	r.Run()
 }
 
 func handleRoot() func(c *gin.Context) {
