@@ -7,4 +7,4 @@ ENV GO111MODULE=on
 
 RUN apt-get update && apt-get install build-essential -y
 RUN cd cmd/client && GOOS=linux go build -o clie
-ENTRYPOINT [ "./cmd/server/clie" ]  
+ENTRYPOINT [ "./cmd/server/clie"]  
